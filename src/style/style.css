@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.treepol {
+    color: rgba(0, 11, 255, 0.56);
+    text-shadow: 1px 3px rgba(175, 95, 255, 0.56);
+}
+
+.nav-btn {
+    background-color: #ff0000;
+}
+
+.logoR
+{
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
