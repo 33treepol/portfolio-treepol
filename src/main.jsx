@@ -7,9 +7,9 @@ import Home2 from './pages/home2'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     {/* <TestOnly /> */}
-    {/* <Home2 /> */}
+    <Home2 />
 
   </React.StrictMode>,
 )
