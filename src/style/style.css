@@ -114,15 +114,25 @@ body {
   transition: 200ms ease-in-out;
 }
 
-
-.loadHover {
-  border: 3px solid #1D9BF0;
-  color: #1D9BF0;
-  background-color: #0c0b3300;
+.loadHover:hover {
+  color: #0c0b33;
+  border: 3px solid #8B98A5;
+  background-color: #8B98A5;
 }
 
+.loadHover2 {
+  border: 3px solid #1D9BF0;
+  color: #1D9BF0;
+  border-radius: 8px;
+  height: 50px;
+  width: 100px;
+  background-color: #0c0b3300;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
 
-.loadHover:hover {
+.loadHover2:hover {
   color: #0c0b33;
   border: 3px solid #8B98A5;
   background-color: #8B98A5;

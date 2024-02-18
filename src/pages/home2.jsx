@@ -24,6 +24,8 @@ import FIGMA from '../img/svg logo/icons8-figma.svg'
 import reactP from '../img/reactProject.png'
 import colmar from '../img/colmarHTMLCSS.png'
 import contactUs from '../img/svg logo/contactsImage.svg'
+import chibaProject from '../img/ChibaProject.png'
+import RedHatProject from '../img/JavascriptAssessment.png'
 
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -55,7 +57,7 @@ function Home2() {
 
                     <Grid container sx={{ p: '50px 0 50px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: { xs: 'column-reverse', sm: 'row' } }}>
                         <Grid item xs={12} sm={6} >
-                            <Typography variant="h3" sx={{ color: '#eff3f4' }}>Treepol Pintookanok</Typography>
+                            <Typography variant="h3" sx={{ color: '#eff3f4', pt: {xs: '50px', md: '0px'} }}>Treepol Pintookanok</Typography>
                             <TypingText />
                             <Typography variant="h6" sx={{ color: '#eff3f4' }}>Junior Software Developer Bootcamp Cohort#6 at Generation Thailand who passionate in learning and driven to apply my skills to efficiently address customer needs and elevate the quality of products.</Typography>
                             <Box sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'start' }, pt: '40px' }}>
@@ -63,8 +65,8 @@ function Home2() {
                             </Box>
                             <Box sx={{ textAlign: { xs: 'center', sm: 'left' }, pt: '40px' }}>
                                 <ThemeProvider theme={theme}>
-                                    <a href="https://www.linkedin.com/in/tpintookanok/" target="_blank" ><LinkedInIcon className="iconhover" color="ochre" fontSize="large" /></a>
-                                    <a href="https://github.com/33treepol" target="_blank" ><GitHubIcon className="iconhover" sx={{ p: '0 20px 0 20px', cursor: 'pointer' }} color="ochre" fontSize="large" /></a>
+                                    <a href="https://www.linkedin.com/in/tpintookanok/" target="_blank" ><LinkedInIcon className="iconhover" color="ochre" sx={{ p: '0 20px 0 20px', cursor: 'pointer', fontSize: 40 }}/></a>
+                                    <a href="https://github.com/33treepol" target="_blank" ><GitHubIcon className="iconhover" color="ochre" sx={{ p: '0 20px 0 20px', cursor: 'pointer', fontSize: 40 }}/></a>
                                 </ThemeProvider>
                             </Box>
                         </Grid>
@@ -74,7 +76,9 @@ function Home2() {
                         </Grid>
                     </Grid>
 
+                    <span id="about"></span>
                     <Grid item xs={12} sx={{ display: 'flex', alignItems: 'center', gap: '5px', p: '50px 0 50px 0' }}>
+
                         <Box sx={{ width: '10px', height: '10px', borderRadius: '50%', bgcolor: 'rgb(29, 155, 240)' }}></Box>
                         <Box sx={{ width: '10px', height: '10px', borderRadius: '50%', bgcolor: 'rgb(29, 155, 240)' }}></Box>
                         <Box sx={{ width: '95%', height: '5px', borderRadius: '10px', bgcolor: 'rgb(29, 155, 240)' }}></Box>
@@ -86,8 +90,7 @@ function Home2() {
                             <img src={onDesk} alt="on Desk" width={'80%'} style={{ borderRadius: '50px', border: '5px solid #1D9BF0' }} />
                         </Grid>
                         <Grid item xs={12} md={7}>
-                            <span id="about"></span>
-                            <Typography variant="h3" sx={{ color: 'rgb(29, 155, 240)', fontWeight: '700' }}>Who i am</Typography>
+                            <Typography variant="h3" sx={{ color: 'rgb(29, 155, 240)', fontWeight: '700', pt: {xs: '50px', md: '0px'},textAlign: {xs:'center', md: 'left'} }}>About me</Typography>
                             <br /><br />
 
                             <Typography variant="h6" sx={{ color: '#eff3f4' }}>My previous role, I was unexpectedly moved from the Retoucher position to work on the WordPress website editor without any prior coding knowledge which made me aware of working quality. After doing it for a while, I had realized that I must learn how to produce websites with good methods and must also resolve problems that occur in the correct way.
@@ -98,11 +101,11 @@ function Home2() {
                         </Grid>
 
                     </Grid>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                     <span id="skill"></span>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <Typography variant="h3" sx={{ color: 'rgb(29, 155, 240)', fontWeight: '700', textAlign: 'center' }}>Skills</Typography>
                     <Grid item xs={12} sx={{ p: '50px 0 50px 0', display: 'flex', gap: '70px', flexWrap: 'wrap', justifyContent: { xs: 'center' } }}>
                         {/* <InsertSkill logoText={logo} /> */}
@@ -164,8 +167,8 @@ function Home2() {
 
                     </Grid>
 
+                    <span id="project"></span>
                     <Grid item xs={12} sx={{ p: '50px 0 0px 0', display: 'flex', flexWrap: 'wrap', justifyContent: { xs: 'center' } }}>
-                        <span id="project"></span>
                         <Typography variant="h3" sx={{ color: 'rgb(29, 155, 240)', fontWeight: '700' }}>Projects</Typography>
                         <Projects />
                     </Grid>
@@ -176,10 +179,10 @@ function Home2() {
                         <Box sx={{ width: '10px', height: '10px', borderRadius: '50%', bgcolor: 'rgb(29, 155, 240)' }}></Box>
                     </Grid>
 
+                    <span id="contact"></span>
                     <Grid item xs={12} sx={{
                         p: '100px 0 100px 0', display: 'flex', flexWrap: 'wrap', flexDirection: 'column', alignItems: 'center', justifyContent: { xs: 'center' }
                     }}>
-                        <span id="contact"></span>
 
                         <Typography variant="h3" sx={{ color: 'rgb(29, 155, 240)', fontWeight: '700' }}>Contact</Typography>
 
@@ -355,6 +358,47 @@ function Projects() {
                     <CardMedia
                         component="img"
                         height="300px"
+                        image={chibaProject}
+                        alt="project1"
+                        sx={{ borderRadius: '8px' }}
+                    />
+                </Grid>
+                <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', p: { xs: '0px', md: '50px' } }}>
+                    <Typography variant="h4" sx={{ p: { xs: '20px 0 0px 0', md: '0 0px 30px 0px' }, color: 'rgba(169, 255, 57, 1)' }}>Matcha Project</Typography>
+                    <Typography sx={{ fontSize: '20px', p: { xs: '10px 0 10px 0', md: '0 0px 30px 50px' }, color: 'white' }}>Matcha project is a web application for exercising. You can log in to booking sport cord, record your exercise. The app will calculate calories</Typography>
+
+                    <div style={{ display: 'flex', gap: '50px' }}>
+                        <a href="https://chiba-matcha-front-end.vercel.app/" target="_blank"><button className='loadHover2'>VIEW</button></a>
+                        <a href="https://github.com/33treepol/chiba-matcha-front-end" target="_blank"><button className='loadHover2'>GIT</button></a>
+                    </div>
+
+                </Grid>
+            </Grid>
+
+            <Grid container item sx={{ p: { xs: '50px 0 50px 0', md: '0px 0 50px 0' }, display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+                <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', p: '0px' }}>
+                    <CardMedia
+                        component="img"
+                        height="300px"
+                        image={RedHatProject}
+                        alt="project1"
+                        sx={{ borderRadius: '8px' }}
+                    />
+                </Grid>
+                <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', p: { xs: '0px', md: '50px' } }}>
+                    <Typography variant="h4" sx={{ p: { xs: '20px 0 0px 0', md: '0 0px 30px 0px' }, color: 'rgba(169, 255, 57, 1)' }}>Find a Hat Project</Typography>
+                    <Typography sx={{ fontSize: '20px', p: { xs: '10px 0 10px 0', md: '0 0px 30px 50px' }, color: 'white' }}>Find a Hat is JavaScript mini-game that I created on Replit. Play as a guy in search of red hat while evading cactus. Use 'u,' 'd,' 'r' and 'l' to move, and win by reaching the red hat.</Typography>
+
+                    <a href="https://replit.com/@lertjungbay/33-treepol-jsd-find-your-hat" target="_blank"><button className='loadHover2'>VIEW</button></a>
+
+                </Grid>
+            </Grid>
+
+            <Grid container item sx={{ p: { xs: '50px 0 50px 0', md: '0px 0 50px 0' }, display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+                <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', p: '0px' }}>
+                    <CardMedia
+                        component="img"
+                        height="300px"
                         image={reactP}
                         alt="project1"
                         sx={{ borderRadius: '8px' }}
@@ -363,7 +407,12 @@ function Projects() {
                 <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', p: { xs: '0px', md: '50px' } }}>
                     <Typography variant="h4" sx={{ p: { xs: '20px 0 0px 0', md: '0 0px 30px 0px' }, color: 'rgba(169, 255, 57, 1)' }}>React CRUD</Typography>
                     <Typography sx={{ fontSize: '20px', p: { xs: '10px 0 10px 0', md: '0 0px 30px 50px' }, color: 'white' }}>React project using JavaScript and React hooks to send data to a backend database. The website allows administrators to create and delete data on the admin page, and users can view this data on the user page.</Typography>
-                    <Button variant="contained" color="error" target="_blank" href="https://career-changer-react-assessment-eight.vercel.app/">View</Button>
+
+                    <div style={{ display: 'flex', gap: '50px' }}>
+                        <a href="https://career-changer-react-assessment-eight.vercel.app/" target="_blank"><button className='loadHover2'>VIEW</button></a>
+                        <a href="https://github.com/33treepol/career-changer-react-assessment" target="_blank"><button className='loadHover2'>GIT</button></a>
+                    </div>
+
                 </Grid>
             </Grid>
 
@@ -380,7 +429,10 @@ function Projects() {
                 <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', p: { xs: '0px', md: '50px' } }}>
                     <Typography variant="h4" sx={{ p: { xs: '20px 0 0px 0', md: '0 0px 30px 0px' }, color: 'rgba(169, 255, 57, 1)' }}>Colmar Academy</Typography>
                     <Typography sx={{ fontSize: '20px', p: { xs: '10px 0 10px', md: '0 0px 30px 50px' }, color: 'white' }}>A static web page was builded with only HTML and CSS. Build as exercise for vanilla coding.</Typography>
-                    <Button sx={{ mb: '50px' }} variant="contained" color="error" target="_blank" href="https://33-goh-colmar.vercel.app/">View</Button>
+                    <div style={{ display: 'flex', gap: '50px' }}>
+                        <a href="https://33-goh-colmar.vercel.app/" target="_blank"><button className='loadHover2'>VIEW</button></a>
+                        <a href="https://github.com/33treepol/33-goh-colmar" target="_blank"><button className='loadHover2'>GIT</button></a>
+                    </div>
                 </Grid>
             </Grid>
         </>
