@@ -61,7 +61,7 @@ function Home2() {
                             <TypingText />
                             <Typography variant="h6" sx={{ color: '#eff3f4' }}>Junior Software Developer Bootcamp Cohort#6 at Generation Thailand who passionate in learning and driven to apply my skills to efficiently address customer needs and elevate the quality of products.</Typography>
                             <Box sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'start' }, pt: '40px' }}>
-                                <a href="https://drive.google.com/file/d/1Bxc0FvY4bQ1XwqF_uD1udsKunH7qk7d3/view?usp=drive_link" target="_blank"><button className='loadHover'>Download CV</button></a>
+                                <a href="https://drive.google.com/file/d/1HlfkbQsDQ4PpL8tiKWPlmzaNCYURxxTQ/view?usp=sharing" target="_blank"><button className='loadHover'>Download CV</button></a>
                             </Box>
                             <Box sx={{ textAlign: { xs: 'center', sm: 'left' }, pt: '40px' }}>
                                 <ThemeProvider theme={theme}>
