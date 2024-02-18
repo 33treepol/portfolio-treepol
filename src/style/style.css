@@ -1,64 +1,137 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .treepol {
-    color: rgba(0, 11, 255, 0.56);
-    text-shadow: 1px 3px rgba(175, 95, 255, 0.56);
+  color: rgba(0, 11, 255, 0.56);
+  text-shadow: 1px 3px rgba(175, 95, 255, 0.56);
 }
 
 .nav-btn {
-    background-color: #ff0000;
+  background-color: #ff0000;
 }
 
-.logoR
-{
-    animation: spin 10s linear infinite;
+.logoR {
+  animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(-360deg); }
+  0% {
+    transform: rotate(0deg);
   }
 
-
-
-
-
-
-
-
-  /* ----------------- */
-  
-  .typewriter h2 {
-    color: #fff;
-    text-align: left;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 10px auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .7s step-end infinite;
+  25% {
+    transform: rotate(90deg);
   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+
+  50% {
+    transform: rotate(-90deg);
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    /* 20% { border-color: orange } */
-    20% { border-color: rgba(255, 166, 0, 0) }
+}
+
+
+
+
+
+
+
+
+/* ----------------- */
+
+.skills-box {
+  transition-duration: 0.25s;
+}
+
+.skills-box:hover {
+  transform: scale(1.1);
+}
+
+
+.typewriter h2 {
+  color: #fff;
+  text-align: left;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 10px auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .7s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
   }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  /* 20% { border-color: orange } */
+  20% {
+    border-color: rgba(255, 166, 0, 0)
+  }
+}
+
+
+.loadHover {
+  border: 3px solid #1D9BF0;
+  color: #1D9BF0;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  background-color: #0c0b3300;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+
+.loadHover {
+  border: 3px solid #1D9BF0;
+  color: #1D9BF0;
+  background-color: #0c0b3300;
+}
+
+
+.loadHover:hover {
+  color: #0c0b33;
+  border: 3px solid #8B98A5;
+  background-color: #8B98A5;
+}
+
+.iconhover {
+  transition-duration: 0.1s; /* Adjust the duration as needed */
+}
+
+.iconhover:hover {
+  transform: scale(1.1);
+}
