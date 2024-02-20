@@ -364,8 +364,8 @@ function Projects() {
                     />
                 </Grid>
                 <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', p: { xs: '0px', md: '50px' } }}>
-                    <Typography variant="h4" sx={{ p: { xs: '20px 0 0px 0', md: '0 0px 30px 0px' }, color: 'rgba(169, 255, 57, 1)' }}>Matcha Project</Typography>
-                    <Typography sx={{ fontSize: '20px', p: { xs: '10px 0 10px 0', md: '0 0px 30px 50px' }, color: 'white' }}>Matcha project is a web application for exercising. You can log in to booking sport cord, record your exercise. The app will calculate calories</Typography>
+                    <Typography variant="h4" sx={{ p: { xs: '20px 0 0px 0', md: '0 0px 30px 0px' }, color: 'rgba(169, 255, 57, 1)' }}>PlayHub Project</Typography>
+                    <Typography sx={{ fontSize: '20px', p: { xs: '10px 0 10px 0', md: '0 0px 30px 50px' }, color: 'white' }}>PlayHub project is a web application for exercising. You can log in to booking sport cord, record your exercise. The app will calculate calories</Typography>
 
                     <div style={{ display: 'flex', gap: '50px' }}>
                         <a href="https://chiba-matcha-front-end.vercel.app/" target="_blank"><button className='loadHover2'>VIEW</button></a>
